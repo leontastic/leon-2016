@@ -16,6 +16,15 @@ body {
   line-height: 1.4;
 }
 
+a {
+  position: relative;
+  top: 0;
+}
+
+a:active {
+  top: 1px;
+}
+
 strong {
   font-weight: bold;
 }
@@ -23,11 +32,11 @@ strong {
 header {
   text-align: right;
 
-  -webkit-animation: fadein 0.5s ease-out; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 0.5s ease-out; /* Firefox < 16 */
-      -ms-animation: fadein 0.5s ease-out; /* Internet Explorer */
-       -o-animation: fadein 0.5s ease-out; /* Opera < 12.1 */
-          animation: fadein 0.5s ease-out;
+  -webkit-animation: fadein 0.75s ease-out; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.75s ease-out; /* Firefox < 16 */
+      -ms-animation: fadein 0.75s ease-out; /* Internet Explorer */
+       -o-animation: fadein 0.75s ease-out; /* Opera < 12.1 */
+          animation: fadein 0.75s ease-out;
 }
 
 header h1 {
@@ -50,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-  border-right: #a40000 solid 4px;
+  border-right: #a40000 solid 0.25rem;
 }
 
 main {
@@ -58,11 +67,11 @@ main {
   margin-left: 5vw;
   max-width: 28rem;
 
-  -webkit-animation: slidein 0.5s ease-out; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: slidein 0.5s ease-out; /* Firefox < 16 */
-      -ms-animation: slidein 0.5s ease-out; /* Internet Explorer */
-       -o-animation: slidein 0.5s ease-out; /* Opera < 12.1 */
-          animation: slidein 0.5s ease-out;
+  -webkit-animation: slidein 0.75s ease-out; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: slidein 0.75s ease-out; /* Firefox < 16 */
+      -ms-animation: slidein 0.75s ease-out; /* Internet Explorer */
+       -o-animation: slidein 0.75s ease-out; /* Opera < 12.1 */
+          animation: slidein 0.75s ease-out;
 }
 
 main section h2 {
