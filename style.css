@@ -1,10 +1,9 @@
 /* fonts */
-@import url(https://fonts.googleapis.com/css?family=Amiri);
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,400,400italic,600,600italic,700,700italic,900,900italic);
 
 html {
-  font-family: 'Amiri';
-  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -23,40 +22,72 @@ strong {
 
 header {
   text-align: right;
+
+  -webkit-animation: fadein 0.5s ease-out; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.5s ease-out; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s ease-out; /* Internet Explorer */
+       -o-animation: fadein 0.5s ease-out; /* Opera < 12.1 */
+          animation: fadein 0.5s ease-out;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  padding-top: 0.5rem;
-  padding-left: 10vw;
-  padding-right: 1rem;
+  font-size: 1.75rem;
+  padding: 0.5rem 1rem 0.5rem 10vw;
   margin-bottom: 3rem;
-  background: #ededed;
+  background: #a40000;
+  color: #fff;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
-nav {
+nav a {
+  font-weight: 600;
   padding-right: 1rem;
+  border-right: #a40000 solid 0;
+  transition: border-right 0.25s;
 }
 
-nav > * {
+nav a:hover {
+  border-right: #a40000 solid 4px;
 }
 
 main {
   flex: 1;
   margin-left: 5vw;
-  max-width: 600px;
+  max-width: 28rem;
+
+  -webkit-animation: slidein 0.5s ease-out; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: slidein 0.5s ease-out; /* Firefox < 16 */
+      -ms-animation: slidein 0.5s ease-out; /* Internet Explorer */
+       -o-animation: slidein 0.5s ease-out; /* Opera < 12.1 */
+          animation: slidein 0.5s ease-out;
 }
 
-section h2 {
-  font-size: 1.5rem;
+main section h2 {
+  font-size: 1.25rem;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
-section h3 {
+main section h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
 main p {
   margin-bottom: 1.25rem;
+}
+
+main p strong {
+  font-weight: 600;
+}
+
+main p a {
+  border-bottom: 1px dotted #999;
+}
+
+main p a:hover, main p a:active {
+  border-bottom: 1px solid #666;
 }
